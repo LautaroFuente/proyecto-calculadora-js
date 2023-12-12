@@ -58,6 +58,9 @@ h1{
     border: solid 2px rgb(0, 0, 0);
     border-radius: 4rem;
     background-color: rgb(53, 53, 53);
+    color: white;
+    font-size: 2rem;
+    overflow: hidden;
     grid-area: display;
     justify-self: center;
     margin-top: 1rem;
@@ -77,7 +80,7 @@ h1{
     grid-template-columns: 4;
     grid-template-areas: 
         "display display display display"
-        "delete parenthesis percent division"
+        "delete parenthesis-open parenthesis-close division"
         "seven eight nine multiplication"
         "four five six rest"
         "one two three plus"
@@ -126,12 +129,12 @@ h1{
     grid-area: delete;
 }
 
-.btn-parenthesis{
-    grid-area: parenthesis;
+.btn-parenthesis-open{
+    grid-area: parenthesis-open;
 }
 
-.btn-percent{
-    grid-area: percent;
+.btn-parenthesis-close{
+    grid-area: parenthesis-close;
 }
 
 .btn-division{
